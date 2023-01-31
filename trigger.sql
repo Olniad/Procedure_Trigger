@@ -23,3 +23,5 @@ data datetime not null
 insert into produto(id,descricao,data) values (null,"jose comprou sabao", "2023-12-04 04:15:12");
 
 select * from log;
+
+/*TRIGGER (AFTER_INSERT): insert into log(id,nome,data) values (null,new.descricao,sysdate()); */
